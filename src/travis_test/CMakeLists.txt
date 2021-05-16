@@ -7,7 +7,7 @@ if(MSVC)
 endif()
 
 include_directories(${CONAN_INCLUDE_DIRS})
-include_directories(${travis_test_SOURCE_DIR}/include)
+target_include_directories(test PRIVATE ${travis_test_SOURCE_DIR}/include)
 
 set(SOURCE_FILES
 	include/travis_test/foo.hpp
