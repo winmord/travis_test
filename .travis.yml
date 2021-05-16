@@ -6,6 +6,7 @@ install:
 - pip install conan
 - conan user
 script:
+- ls /home/travis/.conan/profiles
 - conan profile update settings.compiler.libcxx=libstdc++17 default
 - conan install .
 - cmake .
