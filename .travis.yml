@@ -6,6 +6,7 @@ install:
 - pip install conan
 - conan user
 script:
+- ls
 - conan install .
 - cmake .
 - make
