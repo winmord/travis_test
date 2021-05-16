@@ -1,7 +1,8 @@
 #include <iostream>
+#include <travis_test/foo.hpp>
 
 int main()
 {
-	std::cout << "TRAVIS" << std::endl;
+	foo();
 	return 0;
 }
