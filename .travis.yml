@@ -5,8 +5,8 @@ compiler:
 install:
 - pip install conan
 - conan user
+- conan profile update settings.compiler.libcxx=libstdc++17 default
 script:
-- ls /home/travis/build/winmord/travis_test/src/travis_test
 - conan install .
 - cmake .
 - make
