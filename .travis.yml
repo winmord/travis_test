@@ -8,7 +8,7 @@ install:
 script:
 - mkdir build
 - cd build
-- ls /home/travis/build/winmord/travis_test/src/travis_test/include/travis_test
+- ls /home/travis/winmord/travis_test/src/travis_test/include/travis_test
 - conan install ..
 - cmake ..
 - make
