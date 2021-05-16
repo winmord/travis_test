@@ -9,7 +9,7 @@ endif()
 include_directories(${CONAN_INCLUDE_DIRS})
 
 set(SOURCE_FILES
-	include/travis_test/foo.hpp
+	${travis_test_SOURCE_DIR}/include/travis_test/foo.hpp
 	src/main.cpp
 	)
 	
