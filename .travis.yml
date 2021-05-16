@@ -6,8 +6,7 @@ install:
 - pip install conan
 - conan user
 script:
-- mkdir build
-- cd build
-- conan install ..
-- cmake ..
+- ls /home/travis/build/winmord/travis_test/src/travis_test
+- conan install .
+- cmake .
 - make
