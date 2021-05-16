@@ -5,9 +5,9 @@ compiler:
 install:
 - pip install conan
 - conan user
-script:
-- echo ${CONAN_DEFAULT_PROFILE_PATH}
+- conan profile new default --detect
 - conan profile update settings.compiler.libcxx=libstdc++17 default
+script:
 - conan install .
 - cmake .
 - make
