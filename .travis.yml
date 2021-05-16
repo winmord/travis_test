@@ -1,13 +1,20 @@
 dist: xenial
 language: cpp
-compiler: 
-- gcc
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-7
+      - g++-
 install:
 - pip install conan
 - conan user
+script:
+- export CC=gcc-7
+- export CXX=g++-7
 - conan profile new default --detect
 - conan profile update settings.compiler.libcxx=libstdc++17 default
-script:
 - conan install .
 - cmake .
 - make
