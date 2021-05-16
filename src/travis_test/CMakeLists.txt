@@ -7,7 +7,6 @@ if(MSVC)
 endif()
 
 include_directories(${CONAN_INCLUDE_DIRS})
-target_include_directories(travis_test PRIVATE ${travis_test_SOURCE_DIR}/include)
 
 set(SOURCE_FILES
 	include/travis_test/foo.hpp
@@ -18,3 +17,4 @@ source_group(TREE ${PROJECT_SOURCE_DIR} FILES ${SOURCE_FILES})
 	
 add_executable(travis_test ${SOURCE_FILES})
 target_link_libraries(travis_test ${CONAN_LIBS})
+target_include_directories(travis_test PRIVATE ${travis_test_SOURCE_DIR}/include)
