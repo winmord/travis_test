@@ -1,8 +1,10 @@
-dist: trusty
+dist: xenial
 language: cpp
 compiler: g++
 addons:
   apt:
+    sources:
+      - ubuntu-toolchain-r-test
     packages:
       - gcc-7
       - g++-7
