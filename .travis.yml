@@ -9,7 +9,6 @@ addons:
       - gcc-7
       - g++-7
 install:
-- sudo snap install cmake --beta --classic
 - pip install conan
 - conan user
 script:
