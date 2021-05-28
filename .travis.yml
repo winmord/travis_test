@@ -9,6 +9,7 @@ addons:
       - gcc-7
       - g++-7
 install:
+- apt install cmake
 - pip install conan
 - conan user
 script:
