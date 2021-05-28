@@ -4,8 +4,8 @@ compiler: gcc
 addons:
   snaps:
     - name: cmake
-    confinement: classic
-    channel: 3.19/candidate
+      confinement: classic
+      channel: 3.19/candidate
   apt:
     sources:
       - ubuntu-toolchain-r-test
