@@ -2,6 +2,10 @@ dist: xenial
 language: cpp
 compiler: gcc
 addons:
+  snaps:
+    - name: cmake
+    confinement: classic
+    channel: 3.19/candidate
   apt:
     sources:
       - ubuntu-toolchain-r-test
@@ -9,7 +13,6 @@ addons:
       - gcc-7
       - g++-7
 install:
-- sudo apt-get install cmake
 - pip install conan
 - conan user
 script:
