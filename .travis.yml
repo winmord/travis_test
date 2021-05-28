@@ -8,9 +8,10 @@ addons:
     packages:
       - gcc-7
       - g++-7
-install:
+before_install:
 - sudo apt-get update
 - sudo apt-get install python3
+install:
 - pip install conan
 - conan user
 script:
