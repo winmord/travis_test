@@ -1,17 +1,18 @@
 dist: xenial
 language: cpp
 compiler: gcc
-python:
-  - 3.5
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
     packages:
+      - python3
+      - python3-pip
       - gcc-7
       - g++-7
 install:
-- pip install conan
+- pip3 install conan --upgrade
+- pip3 install conan_package_tools
 - conan user
 script:
 - python3 --version
