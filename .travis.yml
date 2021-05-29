@@ -14,7 +14,7 @@ install:
 - pip install conan
 - conan user
 script:
-- python --version
+- python3 --version
 - cmake --version
 - export CC=gcc-7
 - export CXX=g++-7
