@@ -1,12 +1,13 @@
 dist: xenial
 language: cpp
 compiler: gcc
+python:
+  - 3.6
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - python3-pip
       - gcc-7
       - g++-7
 before_install:
