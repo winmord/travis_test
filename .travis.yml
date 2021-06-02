@@ -11,7 +11,7 @@ addons:
       - gcc-7
       - g++-7
 install:
-- pip3 install conan --upgrade
+- pip install conan --upgrade
 - conan user
 script:
 - export CC=gcc-7
