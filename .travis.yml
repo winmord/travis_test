@@ -11,6 +11,13 @@ addons:
       - python3-pip
       - gcc-7
       - g++-7
+    install:
+      - sudo apt-get install -y python pyton-pip-whl python-pip
+      - pip install --upgrade pip
+      - sudo pip uninstall urllib3 -y
+      - sudo pip install urllib3==1.22
+      - sudo pip3 install conan
+      - sudo conan user
 script:
 - export CC=gcc-7
 - export CXX=g++-7
