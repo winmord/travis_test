@@ -10,7 +10,6 @@ addons:
       - g++-7
 install:
 - pip install conan
-- conan user
 script:
 - export CC=gcc-7
 - export CXX=g++-7
