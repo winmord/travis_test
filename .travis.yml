@@ -11,6 +11,7 @@ addons:
       - gcc-7
       - g++-7
 install:
+- sudo add-apt-repository universe
 - sudo apt-get install -y pyton-pip-whl
 - pip install --upgrade pip
 - sudo pip uninstall urllib3 -y
