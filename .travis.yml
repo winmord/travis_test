@@ -9,7 +9,7 @@ addons:
       - gcc-7
       - g++-7
 install:
-- pip uninstall urllib3
+- pip uninstall urllib3 -y
 - pip install urllib3==1.22
 - pip install conan
 - conan user
