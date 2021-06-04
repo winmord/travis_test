@@ -10,14 +10,13 @@ addons:
       - python3-pip
       - gcc-7
       - g++-7
-    install:
-      - sudo apt-get update
-      - sudo apt-get install -y python3-setuptools
-      - sudo apt-get install -y python3-pip
-      - sudo apt-get clean
-      - pip3 install conan
-      - sudo conan user
 script:
+- sudo apt-get update
+- sudo apt-get install -y python3-setuptools
+- sudo apt-get install -y python3-pip
+- sudo apt-get clean
+- pip3 install conan
+- sudo conan user
 - export CC=gcc-7
 - export CXX=g++-7
 - conan install .
