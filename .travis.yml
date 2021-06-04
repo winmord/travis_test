@@ -6,13 +6,15 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
+      - python3
+      - python3-pip
       - gcc-7
       - g++-7
 install:
 - sudo pip uninstall urllib3 -y
 - sudo pip install urllib3==1.22
 - sudo pip install conan
-- conan user
+- sudo conan user
 script:
 - export CC=gcc-7
 - export CXX=g++-7
