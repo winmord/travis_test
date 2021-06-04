@@ -13,6 +13,7 @@ addons:
 install:
 - pip install conan --upgrade
 - pip install conan_package_tools
+- alias python=python3
 - conan user
 script:
 - export CC=gcc-7
