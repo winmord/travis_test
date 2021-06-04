@@ -9,7 +9,10 @@ addons:
       - gcc-7
       - g++-7
 install:
+- pip uninstall urllib3
+- pip install urllib3==1.22
 - pip install conan
+- conan user
 script:
 - export CC=gcc-7
 - export CXX=g++-7
