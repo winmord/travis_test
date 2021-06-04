@@ -3,14 +3,12 @@ language: cpp
 compiler: gcc
 addons:
   apt:
-    sources:
-      - ubuntu-toolchain-r-test
     packages:
       - gcc-7
       - g++-7
 install:
-- python3 -m pip3 install --upgrade pip setuptools
-- python3 -m pip3 install conan cmake
+- pip3 install --upgrade pip setuptools
+- pip3 install conan cmake
 - conan user
 script:
 - export CC=gcc-7
