@@ -11,6 +11,8 @@ addons:
       - gcc-7
       - g++-7
 install:
+- apt-get install -y pyton-pip-whl
+- pip install --upgrade pip
 - sudo pip uninstall urllib3 -y
 - sudo pip install urllib3==1.22
 - sudo pip3 install conan
