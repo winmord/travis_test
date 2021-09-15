@@ -13,7 +13,7 @@ addons:
 install:
 - sudo pip install conan --upgrade
 - sudo pip install conan_package_tools
-- conan user
+- conan user usr
 script:
 - export CC=gcc-9
 - export CXX=g++-9
