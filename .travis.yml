@@ -6,11 +6,12 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - python3.7
+      - python3
       - python3-pip
       - gcc-7
       - g++-7
 install:
+- python3 --version
 - sudo apt-get install python3-setuptools
 - sudo pip3 install conan --upgrade
 - sudo pip3 install conan_package_tools
