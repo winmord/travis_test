@@ -11,9 +11,8 @@ addons:
       - gcc-9
       - g++-9
 install:
-- sudo apt install python3-pip
-- sudo pip3 install conan --upgrade
-- sudo pip3 install conan_package_tools
+- sudo pip install conan --upgrade
+- sudo pip install conan_package_tools
 - conan user usr
 script:
 - export CC=gcc-9
