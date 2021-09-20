@@ -19,8 +19,6 @@ script:
 - export CXX=g++-9
 - conan profile new default --detect
 - conan profile update settings.compiler.libcxx=libstdc++11 default
-- conan remote clean
-- conan remote add conancenter https://center.conan.io
 - conan install .
 - cmake .
 - make
